@@ -1,6 +1,6 @@
-// const container = document.querySelector(".container");
-// console.log(container);
-
+const container = document.querySelector(".container");
+console.log(container);
+const tabCounter = document.createElement('p')
 // const tabAll = document.querySelectorAll(".tab");
 // const contentAll = document.querySelectorAll(".content");
 // console.log(tabAll);
@@ -26,6 +26,7 @@
 //     })
 // }
 
+
 const tabAll = document.querySelectorAll(".tab");
 const contentAll = document.querySelectorAll(".content");
 let counter = 0;
@@ -48,7 +49,9 @@ for (let i = 0; i < tabAll.length; i++) {
       }
     }
     console.log(counter);
-
+    tabCounter.textContent = ''
+      tabCounter.textContent = counter
+      container.appendChild(tabCounter)
     return counter;
   });
 }
